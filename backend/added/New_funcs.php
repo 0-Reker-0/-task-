@@ -38,6 +38,9 @@ class New_funcs
         int $day
     ):int
     {
+        $tarif = $query[0]['TARIFF'];
+        if($tarif == false)
+            return intval($query[0]['PRICE']);
         $car = unserialize($query[0]['TARIFF']);
         foreach($car as $arend => $int){
             if($arend>=$day){
