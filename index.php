@@ -92,7 +92,7 @@ if(isset($_POST['btn']))
                             </select>
 
                             <label for="customRange1" class="form-label">Количество дней:</label>
-                            <input type="text" class="form-control" id="customRange1" name="dayImput" min="1" max="30">
+                            <input type="number" class="form-control" required id="customRange1" name="dayImput" min="1" max="30">
 
                             <label for="customRange1" class="form-label">Дополнительно:</label>
 
