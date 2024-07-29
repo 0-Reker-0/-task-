@@ -13,9 +13,6 @@ class New_funcs
      */
     public static function select_cars(object $db, array $data):int
     {
-        
-        if($data['dayImput'] == '')
-            return false;
         $val = 0;
         foreach($data as $key => $record){
             if($key != 'product' && $key != 'dayImput')
